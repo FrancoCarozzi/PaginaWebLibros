@@ -1,2 +1,2 @@
 # PaginaWebLibros
-Pproyecto de ActividadRecuperativa.
+Proyecto de ActividadRecuperativa.
