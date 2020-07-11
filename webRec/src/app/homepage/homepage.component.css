@@ -1,0 +1,19 @@
+.bestseller
+{
+width: 250px;
+height: 250px;
+float: left;
+
+}
+.bestseller img
+{
+
+width: 50%;
+
+}
+
+#contH
+{
+
+    padding-left: 25%;
+}

@@ -1,0 +1,16 @@
+
+
+
+
+<div id="contH">
+
+    best sellers
+<div  *ngFor="let producto of producto; let i = index">
+    <div class="bestseller"  *ngIf="producto.bestseller == true">
+      {{producto.nombre}}
+      {{producto.descripcion}}
+      <img class='imgProductos' src='../assets/productos/{{producto.imagen}}'>
+      <span>{{producto.precio|currency}}</span>
+    </div>
+  </div>
+</div>

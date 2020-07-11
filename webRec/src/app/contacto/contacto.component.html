@@ -1,0 +1,28 @@
+<p>contacto works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value )">
+    <div>
+        
+    <label for="nombre">
+    name
+    
+    </label>
+    
+    <input id="nombre" type="text" formControlName="nombreF">
+    </div>
+    
+    <div>
+        
+        <label for="correo">
+        correo:
+        
+        </label>
+        
+        <input id="correo" type="text" formControlName="correoF">
+        </div>
+        
+    
+    
+    
+    <button class="button" type="submit">enviar</button>
+    
+    </form>
