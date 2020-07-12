@@ -1,4 +1,8 @@
-<p>contacto works!</p>
+<div class="contactoForm">
+
+
+    CONTACTO <br>
+    
 <form [formGroup]="form" (ngSubmit)="onSubmit(form.value )">
     <div>
         
@@ -21,8 +25,21 @@
         </div>
         
     
+
+
+        <div>
+        
+            <label for="comentarios">
+            comentarios:
+            
+            </label>
+            
+            <input id="correo" type="text" formControlName="comentF">
+            </div>
     
     
     <button class="button" type="submit">enviar</button>
     
     </form>
+
+</div>

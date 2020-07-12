@@ -1,10 +1,7 @@
-<div *ngFor="let item of items">
+<div class="carritoCont">
+  
 
- <a routerLink='/carrito/{{item .id}}'> {{item.nombre}} </a> | {{item.precio}} | cantidad: {{item.cantidad}}
-
-<span><button (click)="carrito/eliminar(this.item.id)"><i class="material-icons">delete</i></button></span>
-
-</div>
+Registrar datos de Compra:
 
 <form [formGroup]="form" (ngSubmit)="onSubmit(form.value )">
 <div>
@@ -33,3 +30,16 @@ name
 <button class="button" type="submit">enviar</button>
 
 </form>
+<br>
+
+Libros agregados al Carrito:
+<div *ngFor="let item of items">
+
+ <a routerLink='/carrito/{{item .id}}'> {{item.nombre}} </a> | {{item.precio | currency }} | cantidad: {{item.cantidad}}
+
+<span><button class="buttonCompra" (click)="carrito/eliminar(this.item.id)"><i class="material-icons">delete</i></button></span>
+
+</div>
+
+
+</div>

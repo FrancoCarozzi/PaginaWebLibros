@@ -17,14 +17,16 @@
     .nav > li {
     float:left;
      display: inline-block;
+     margin: 5px; 
     }
      
     .nav li a {
-    background:#0c9ba0;
+    background:#472281;
     color:#FFF;
     
     border:5px solid;
     padding:15px 110px;
+    
     }
      
     .nav li a:hover {

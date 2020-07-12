@@ -15,7 +15,8 @@ export class ContactoComponent implements OnInit {
 
     this.form = this.formulario.group({ 
       nombreF:'',
-      correoF:''
+      correoF:'',
+      comentF:'',
       
       
       });

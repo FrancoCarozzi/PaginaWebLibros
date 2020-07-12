@@ -3,13 +3,16 @@
 
 
 <div id="contH">
-
+  Jojo, Página dedicada a la venta de libros online para pedidos a domicilio<br>
+  
     best sellers
+    
 <div  *ngFor="let producto of producto; let i = index">
-    <div class="bestseller"  *ngIf="producto.bestseller == true">
-      {{producto.nombre}}
-      {{producto.descripcion}}
-      <img class='imgProductos' src='../assets/productos/{{producto.imagen}}'>
+    <div class="bestseller"  *ngIf="producto.bestseller >= 500">
+      <a routerLink='/carrito/{{producto .id}}'>  <img class='imgProductos' src='../assets/productos/{{producto.imagen}}'></a><br>
+      <a routerLink='/carrito/{{producto .id}}'> {{producto.nombre}} </a><br>
+      
+      
       <span>{{producto.precio|currency}}</span>
     </div>
   </div>

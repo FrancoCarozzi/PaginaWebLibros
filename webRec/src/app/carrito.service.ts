@@ -4,6 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import{productos} from "./productos";
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -69,8 +70,8 @@ url="http://127.0.0.1/services/"
     let dato = [this.items,datos];
 
     localStorage.clear();
-
-    return this.http.post(`${this.url}guardarContacto.php`,JSON.stringify(datos));
+   
+    return this.http.post(`${this.url}guardarContacto.php`,JSON.stringify(dato));
 
   }
 
