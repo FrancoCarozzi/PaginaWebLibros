@@ -3,10 +3,10 @@
 
 
 <div id="contH">
-  Jojo, Página dedicada a la venta de libros online para pedidos a domicilio<br>
-  
-    best sellers
-    
+  <div class="TitleH">Jojo, Página dedicada a la venta de libros online para pedidos a domicilio.<br>
+  <br>
+    <h1>BestSellers</h1>
+  </div>
 <div  *ngFor="let producto of producto; let i = index">
     <div class="bestseller"  *ngIf="producto.bestseller >= 500">
       <a routerLink='/carrito/{{producto .id}}'>  <img class='imgProductos' src='../assets/productos/{{producto.imagen}}'></a><br>
